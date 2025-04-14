@@ -1,0 +1,40 @@
+.app-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    font-family: sans-serif;
+  }
+  
+  .sidebar {
+    width: 18%;
+    background-color: #f1f1f1;
+    padding: 20px;
+  }
+  
+  .main-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .topbar {
+    display: block;
+    justify-content: space-between;
+    justify-self: center;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .categories-section {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .search-bar {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+  }  

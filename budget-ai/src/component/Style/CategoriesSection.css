@@ -1,0 +1,15 @@
+.grid-header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #aaaaaa;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+    font-size: 10px;
+}
+.Section{
+    border-right: 1px solid #aaaaaa;
+}

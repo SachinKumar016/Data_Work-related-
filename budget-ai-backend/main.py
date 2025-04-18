@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import user_router  # You can add more as needed
+from routers import user_routers  # ✅ Corrected import
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
@@ -7,15 +7,15 @@ app = FastAPI()
 # CORS Middleware for frontend-backend connection
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, set this to your frontend URL
+    allow_origins=["*"],  # 🔐 Replace with frontend URL in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
 # Include routers
-app.include_router(user_router.router)
+app.include_router(user_routers.router)
 
 @app.get("/")
-def root():
-    return {"message": "Budget AI backend is running"}
+def read_root():
+    return {"message": "Welcome to Budget AI!"}

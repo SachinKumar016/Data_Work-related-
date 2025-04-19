@@ -1,13 +1,12 @@
 from fastapi import FastAPI
-from routers import user_routers  # ✅ Corrected import
+from routers import user_routers 
 from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI()
 
-# CORS Middleware for frontend-backend connection
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # 🔐 Replace with frontend URL in production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

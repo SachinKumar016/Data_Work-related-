@@ -1,5 +1,11 @@
 .Sidebar{
-    width: 10vw;
+    width: 17vw;
     height:100vh;
-    background-color: #ccc;
+    background-color: #cccccc7a;
+}
+
+.h1{
+    margin:0px;
+    padding:30px;
+    font-family: sans-serif;
 }
